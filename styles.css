@@ -3,26 +3,27 @@
 * {
   box-sizing: border-box;
 }
-
-
 body {
   margin: 20px 0 0 0;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
-
 .navbar-toggler, .navbar-toggler[aria-expanded="true"] {
   border: white !important;
   border:none;
 }
+#nike-logo:hover{
+  filter: opacity(0.5);
+}
 .navbar li a {
   color: #2b2b2b !important; 
+  font-size: 14px;
 }
 
 .navbar li a:hover {
@@ -34,13 +35,13 @@ html {
   overflow: hidden;
 }
 .hero h1 {
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 700;
 }
 
 .hero-text p{
-  font-size: 17px;
-  color: #605F5F;
+  font-size: 20px;
+  color: #787878;
   font-weight: 400;
 }
 
@@ -55,19 +56,22 @@ html {
   letter-spacing: 2.5px;
 }
 
+.shop-now-btn:hover{
+  background-color: rgb(222, 0, 0);
+}
+
 .hero-shoe {
   position: relative;
-  background: radial-gradient(660px 660px at 63% 58%, #ECECEC 60%, transparent 50%);
+  background: radial-gradient(620px 620px at 63% 45%, #ECECEC 60%, transparent 50%);
 }
 
 .hero-img {
-  position: relative;
-  top: 20%;
-  left: 30%;
+  margin-top: 20px;
+  margin-left: 15%;
   max-width: initial;
-  width: 700px;
+  width: 720px;
   transform: rotate(-30deg);
-  filter: drop-shadow(0px 27px 40px #5c5c5c);
+  filter: drop-shadow(0px 20px 40px #676767) brightness(124%);
 
 }
 @media (max-width: 768px){
@@ -75,4 +79,95 @@ html {
       padding-left: 0px !important;
       padding-right : 0px !important;
   }
+}
+.circle {
+	background:
+    radial-gradient(7em 7em at 50% 50%, #ffffff 30%, transparent 50%);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.circle img{
+  filter: brightness(126%);
+}
+
+.c-selected {
+	background:
+    radial-gradient(7em 7em at 50% 50%, #2b2b2b 49%,  transparent 50%);
+}
+.features-section {
+  height: 20vh;
+  background-color: #F5F5F5 ;
+}
+.feature-title{
+  font-weight: 520;
+  height: 15px;
+  font-size: 18px;
+  color: #2b2b2b;
+}
+.feature-desc {
+  height: fit-content;
+  margin-bottom: 0;
+  color: #989898;
+}
+
+.products-header{
+  font-weight: 600;
+}
+.product-title {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #A3A3A3;
+}
+.product-price{
+  font-size: 20px;
+  font-weight: 600;
+}
+.product{
+  position: relative;
+  transition: all ease 0.5s; 
+  top: 0;
+}
+.product:hover{
+  top: 10px;
+  border: 1px solid #2b2b2b;
+}
+
+.join-us-section {
+  margin-top: 5%;
+  background: url("resouces/images/join-us-background.jpg") rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.join-us-title{
+  font-weight: 520;
+  font-size: 30px;
+  color: white;
+}
+
+.join-us-input{
+  margin: 0;
+  width: 272px;
+  height: 45px;
+  border: #ffffff solid 5px; 
+}
+
+.join-us-btn{
+  margin: 0;
+  height: 45px;
+  width: 50px;
+  background-color: red;
+  border: red solid 5px; 
+}
+.join-us-btn::after{
+  background-image: url("favicon-32.png");
 }
