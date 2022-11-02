@@ -7,7 +7,6 @@ body {
   margin: 20px 0 0 0;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
-
 }
 
 html {
@@ -116,16 +115,16 @@ html {
 }
 .product-title {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .product-desc {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   color: #A3A3A3;
 }
 .product-price{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .product{
@@ -138,14 +137,21 @@ html {
   border: 1px solid #2b2b2b;
 }
 
+.add-to-cart {
+  display: block;
+  border: none;
+  background-color: black !important;
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
 .join-us-section {
   margin-top: 5%;
-  background: url("resouces/images/join-us-background.jpg") rgba(0, 0, 0, 0.6);
+  background: url("../resouces/images/join-us-background.jpg") rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   height: 35vh;
   background-size: cover;
   background-position: center;
-  
 }
 
 .join-us-title{
@@ -159,6 +165,10 @@ html {
   width: 272px;
   height: 45px;
   border: #ffffff solid 5px; 
+  padding-left: 10px;
+}
+.join-us-input:focus{
+  outline: none;
 }
 
 .join-us-btn{
@@ -168,6 +178,19 @@ html {
   background-color: red;
   border: red solid 5px; 
 }
-.join-us-btn::after{
-  background-image: url("favicon-32.png");
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#lblCartCount {
+    font-size: 9px;
+    background: #ff0000;
+    color: #fff;
+    padding: 2px 5px;
+    vertical-align: top;
+    margin-left: -10px; 
 }
