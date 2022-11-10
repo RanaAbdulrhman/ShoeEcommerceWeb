@@ -12,7 +12,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+#godown{
+  height: 160px;
+}
 .navbar-toggler, .navbar-toggler[aria-expanded="true"] {
   border: white !important;
   border:none;
@@ -29,7 +31,6 @@ html {
   color: #2b2b2b !important; 
   font-weight: 800;
 }
-
 .hero {
   overflow: hidden;
 }
@@ -138,12 +139,18 @@ html {
 }
 
 .add-to-cart {
-  display: block;
   border: none;
+  width: 30px;
   background-color: black !important;
   box-shadow: 0px 0px 0px transparent;
   text-shadow: 0px 0px 0px transparent;
+  color:white !important; 
+  display: table-cell; 
+  vertical-align: middle;
+  margin: 0 auto;
+  padding: 0;
 }
+
 
 .join-us-section {
   margin-top: 5%;
@@ -188,9 +195,35 @@ html {
 }
 #lblCartCount {
     font-size: 9px;
-    background: #ff0000;
+    background:  #EF4135;
     color: #fff;
     padding: 2px 5px;
     vertical-align: top;
     margin-left: -10px; 
+}
+.detail{
+  padding: 10px;
+}
+.about-us-background{
+  background-image: url('../resouces/images/about-us.jpeg');
+  background-repeat: no-repeat;
+  object-position: center top;
+  object-fit: fill;
+  height: 600px;
+  width: 100%;
+}
+article{
+  font-size: 18px;
+  line-height: 32px;
+}
+.quote {
+  margin: 0;
+  background: #eee;
+  padding: 1em;
+  border-radius: 1em;
+
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
 }

@@ -18,10 +18,10 @@ session_start();
           <a class="nav-link" href="pages/products.php">Products</a>
         </li>
         <li class="nav-item px-4">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="pages/about.php">About</a>
         </li>
         <li class="nav-item px-4">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="pages/contact-us">Contact Us</a>
         </li>
       </ul>
       <a href="pages/cart.php" style="text-decoration: none;">

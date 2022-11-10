@@ -1,6 +1,9 @@
 <?php 
 session_start();
+include("php/connection.php");
+
 $subtotal=0;
+$number_of_items=0;
 if(isset($_POST['add-to-cart'])){
 
   if(isset($_SESSION['cart'])){
@@ -82,6 +85,8 @@ if(isset($_GET["action"])){
         <?php 
           if(! empty($_SESSION['cart'])){
             foreach($_SESSION['cart'] as $key => $value){
+              $number_of_items = $number_of_items + $value['quantity'];
+
         ?>
         <div class="cart-products d-flex flex-column w-100">
           <div class="cart-product d-flex pt-5 pb-3 position-relative"> 
@@ -96,7 +101,6 @@ if(isset($_GET["action"])){
                 <div class="d-flex flex-row align-items-start">
                   <input type="number" name="quantity" value="<?=$value['quantity']?>" class="w-50 form-control form-control-sm">
                 </div>
-                
                 <div class="d-flex ">
                   <a href="cart.php?action=remove&id=<?=$value['id']?>" class="py-3 me-3">
                     <img src="../resouces/icons/icons8-trash.svg" width="20">
@@ -125,7 +129,7 @@ if(isset($_GET["action"])){
         <div class="d-flex flex-column mt-1">
           <div class="d-flex justify-content-between summary-details mt-4 mb-2">
             <p>Items</p>
-            <p><?php echo count($_SESSION['cart']); ?></p>
+            <p><?php echo $number_of_items; $_SESSION['number_of_items']=$number_of_items ?></p>
           </div>
           <div class="d-flex justify-content-between summary-details mb-2 mt-1">
             <p>Subtotal</p>
@@ -139,12 +143,11 @@ if(isset($_GET["action"])){
             <p>VAT (15%)</p>
             <p><?=$subtotal*0.15?></p>
           </div>
-          <hr>
-          <div class="d-flex justify-content-between summary-details mb-3 mt-1">
-            <p>Total</p>
+          <div class="d-flex justify-content-between summary-details mb-4 mt-1">
+            <strong>Total</strong>
             <strong><?=$subtotal*1.15?></strong>
           </div>
-            <a href="" class="checkout-link h-100">
+            <a href="checkout.php" class="checkout-link h-100">
               <div class="checkout-btn d-flex justify-content-center align-items-center w-100">
                 <p class="m-0">CHECKOUT</p>
               </div>
@@ -155,14 +158,6 @@ if(isset($_GET["action"])){
       </div>
     </div>
   </div>
-  
-  <?php 
-  // var_dump($_SESSION['cart']);
-  // echo count($_SESSION['cart']);
-  // echo "<br>";
-  // echo isset($_SESSION['cart']);
-
-  ?>
   <?php include 'footer.php';?>
 </body>
 </html>

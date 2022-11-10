@@ -18,25 +18,27 @@ session_start();
           <a class="nav-link" href="products.php">Products</a>
         </li>
         <li class="nav-item px-4">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item px-4">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="contact-us.php">Contact Us</a>
         </li>
       </ul>
-      <a href="cart.php" style="text-decoration: none;">
-        <div class="text-end mt-2">
-          <i class="fa" style="font-size:24px"><img src="../resouces/icons/cart.svg" alt="" width="18"></i>
-          <span class='badge badge-warning' id='lblCartCount'> 
-            <?php
-              if(isset($_SESSION['cart'])){
-                echo count($_SESSION['cart']);
-              }else{
-                echo 0;
-              }
-            ?>
-          </span>
-        </div>
-     </a>
+      <div class="right d-flex justify-content-center align-items-center gap-4">
+        <a href="cart.php" style="text-decoration: none;">
+          <div class="text-end mt-2">
+            <i class="fa" style="font-size:24px"><img src="../resouces/icons/cart.svg" alt="" width="18" id="shopping-cart"></i>
+            <span class='badge badge-warning' id='lblCartCount'> 
+              <?php
+                if(isset($_SESSION['cart'])){
+                  echo count($_SESSION['cart']);
+                }else{
+                  echo 0;
+                }
+              ?>
+            </span>
+          </div>
+        </a>
+      </div>
     </div>
   </nav>

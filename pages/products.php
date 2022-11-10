@@ -1,9 +1,8 @@
 <?php
-  $con = mysqli_connect('localhost', 'root'); 
-  mysqli_select_db($con, 'ecommerce'); 
+session_start();
+  include("php/connection.php");
   $sql = "SELECT * FROM products";
   $products = $con->query($sql);
-  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@
   <title>Nike Products</title>
 </head>
 <body>
-  <?php include 'nav.php';?>
+  <?php include('nav.php');?>
   <div class="body-section" >
     <div class="products-section py-5">
       <div class="trending-products d-flex flex-column align-items-center flex-wrap">
@@ -41,7 +40,9 @@
               <input type="hidden" name="image" value="<?=$product['image']?>">
               <div class="d-flex justify-content-between align-items-baseline">
                 <p class="product-price">$<?= $product['price']?></p>
-                <button class="add-to-cart m-2 p-2" type="submit" name="add-to-cart" value=""><img src="../resouces/icons/cart-78-128.png" width=15></button>
+                <button class="add-to-cart m-2 px-2 py-2" type="submit" name="add-to-cart" value="">
+                    &plus;
+                </button>
               </div>
             </form>
           </div>
@@ -53,13 +54,6 @@
       </div>
     </div>
   </div>
-
-  <?php 
-  // var_dump($_SESSION['cart']);
-  // echo count($_SESSION['cart']);
-  // echo "<br>";
-  // echo isset($_SESSION['cart']);
-  ?>
   <?php include 'footer.php'; ?>
   <script src="../function.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

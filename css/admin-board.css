@@ -1,0 +1,25 @@
+#godown{
+  height: 100px!important;
+}
+.side-nav .card-header{
+  background-color: #212529;
+  color: white;
+}
+.side-nav .card-body h6{
+  font-weight: 600;
+  font-size: 18px;
+}
+.side-nav .card-body p{
+  font-size: 18px;
+}
+.form-group label{
+  font-size: 16px !important;
+  margin-top: 20px;
+}
+#shopping-cart {
+  display: none !important;
+}
+#lblCartCount {
+  display: none !important;
+
+}
