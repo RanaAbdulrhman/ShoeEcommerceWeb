@@ -25,14 +25,16 @@ This website is built as a project for the web development course at university.
 ## Installation :arrow_down:
 1. Install XAMPP or WAMPP.
 2. Open XAMPP Control panal and start (apache) and (mysql).
-3. Follow these gitbash commands: 
-i>cd C:\xampp\htdocs\
-ii>git clone https://github.com/RanaAbdulrhman/ShoeEcommerceWeb
+3. Follow these gitbash commands:
+```
+    cd C:\xampp\htdocs\
+    git clone https://github.com/RanaAbdulrhman/ShoeEcommerceWeb
+```
 4. Open the link: [localhost/phpmyadmin]
 5. click on new at side navbar.
-6. In phpmyadmin, add a new database and name it as (ecommerce).
-7. Import the file (ecommerce.sql) to your phpmyadmin.
-9. Access the website in the browser on the link: [http://localhost/shoeEcommerceWeb].
+6. In phpMyAdmin, add a new database and name it as (ecommerce).
+7. Import the file (ecommerce.sql) to your phpMyAdmin.
+8. Access the website in the browser via the link: [http://localhost/shoeEcommerceWeb].
 
 # Screenshots :camera:
 ## Homepage
