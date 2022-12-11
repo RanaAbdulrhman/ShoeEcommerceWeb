@@ -1,7 +1,7 @@
-# PHP Basic Shoe Store Website
+# PHP Basic Shoe Store Website :shoe:
 This website is built as a project for the web development course at university.
 
-## Technologies Used
+## Technologies Used :triangular_ruler:
 - HTML
 - CSS
 - JavaScript
@@ -11,21 +11,21 @@ This website is built as a project for the web development course at university.
 
 ## Website Features 
 
-### for users: 
+### For users :bust_in_silhouette:: 
 - Shop products display 
 - Shopping cart management
 - Order summary display 
 
-### for admin: 
+### For admin :unlock:: 
 - Dashboard to view current products
 - Adding a new product
 - Updating product details (including product image)
 - Deleting a product
 
-## Installation
+## Installation :arrow_down:
 Download bookstore folder and upload these file to your server or you can download an application called XAMPP or other. After, you need to import database.sql to your server/XAMPP first.
 
-# Screenshots
+# Screenshots :camera:
 ## Homepage
 <img width="1437" alt="homepage" src="https://user-images.githubusercontent.com/84894614/206931387-084f0340-5b73-4590-abd9-9f3f338bd569.png">
 <img width="1437" alt="trending-projects" src="https://user-images.githubusercontent.com/84894614/206931393-d732be0d-ec3d-42b7-8bad-b32da3d509f7.png">
