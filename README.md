@@ -6,7 +6,7 @@ This website is built as a project for the web development course at university.
 - CSS
 - JavaScript
 - Bootstrap (CSS Framework)
-- PHP (Sessions & and CRUD operations)
+- PHP (Sessions & CRUD operations)
 - MySQL
 
 ## Website Features 
