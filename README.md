@@ -68,4 +68,5 @@ ii>git clone https://github.com/RanaAbdulrhman/ShoeEcommerceWeb
 ### Adding a new product
 <img width="1437" alt="adding-product" src="https://user-images.githubusercontent.com/84894614/206931380-b69b6bd4-4064-48f1-8905-74d555ee4c33.png">
 
-
+## Database
+<img width="1437" alt="Database table" src="https://user-images.githubusercontent.com/84894614/206933105-d45ab0b6-e64a-470c-8988-f8bcecabb0d3.png">
