@@ -12,9 +12,9 @@ This website is built as a project for the web development course at university.
 ## Website Features 
 
 ### For users :bust_in_silhouette:: 
-- Shop products display 
+- Displaying products 
 - Shopping cart management
-- Order summary display 
+- Displaying order summary 
 
 ### For admin :unlock:: 
 - Dashboard to view current products
@@ -31,10 +31,9 @@ This website is built as a project for the web development course at university.
     git clone https://github.com/RanaAbdulrhman/ShoeEcommerceWeb
 ```
 4. Open the link: [localhost/phpmyadmin]
-5. click on new at side navbar.
-6. In phpMyAdmin, add a new database and name it as (ecommerce).
-7. Import the file (ecommerce.sql) to your phpMyAdmin.
-8. Access the website in the browser via the link: [http://localhost/shoeEcommerceWeb].
+5. Add a new database and name it as (ecommerce).
+6. Import the file (ecommerce.sql) to your phpMyAdmin.
+7. Access the website in the browser via the link: [http://localhost/shoeEcommerceWeb].
 
 # Screenshots :camera:
 ## Homepage
