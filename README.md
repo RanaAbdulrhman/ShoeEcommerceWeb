@@ -1,4 +1,4 @@
-# PHP Basic Shoe Store Website :shoe:
+# PHP Shoe Store Website :shoe:
 This website is built as a project for the web development course at university.
 
 ## Technologies Used :triangular_ruler:
